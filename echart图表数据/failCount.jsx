@@ -7,13 +7,18 @@ export default class FailCount extends PureComponent {
         let option = {
             legend: {},
             tooltip: {},
+            toolbox:{
+                feature:{
+                    saveAsImage:{}
+                }
+            },
             dataset: {
-                        dimensions: ['product', 'CAO', 'appAware', 'mCloud'],
+                        dimensions: ['product', 'NSCO', 'appAware', 'mCloud'],
                         source: [
-                            { product: '25', 'CAO': 0.1, 'appAware': 1, 'mCloud': 2 },
-                            { product: '50', 'CAO': 1, 'appAware': 3, 'mCloud': 5 },
-                            { product: '75', 'CAO': 1, 'appAware': 4, 'mCloud': 8 },
-                            { product: '100', 'CAO': 2, 'appAware': 6, 'mCloud': 10 }
+                            { product: '25', 'NSCO': 0.1, 'appAware': 1, 'mCloud': 2 },
+                            { product: '50', 'NSCO': 1, 'appAware': 3, 'mCloud': 5 },
+                            { product: '75', 'NSCO': 1, 'appAware': 4, 'mCloud': 8 },
+                            { product: '100', 'NSCO': 2, 'appAware': 6, 'mCloud': 10 }
                         ]
                     },
             xAxis: {

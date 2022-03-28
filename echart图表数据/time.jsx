@@ -7,9 +7,14 @@ export default class Time extends PureComponent {
         let option = {
             legend: {},
             tooltip: {},
+            toolbox:{
+                feature:{
+                    saveAsImage:{}
+                }
+            },
             dataset: {
                 source: [
-                    ['function', 'CAO', 'appAware', 'mCloud'],
+                    ['function', 'NSCO', 'appAware', 'mCloud'],
                     ['10', 16, 26, 40],
                     ['20', 35, 50, 89],
                     ['30', 54, 77, 126],

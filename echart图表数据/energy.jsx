@@ -7,9 +7,14 @@ export default class Energy extends PureComponent {
         let option = {
             legend: {},
             tooltip: {},
+            toolbox:{
+                feature:{
+                    saveAsImage:{}
+                }
+            },
             dataset: {
                 source: [
-                    ['function', 'CAO', 'appAware', 'mCloud'],
+                    ['function', 'NSCO', 'appAware', 'mCloud'],
                     ['10', 137, 198, 334],
                     ['20', 262, 380, 722],
                     ['30', 356, 585, 989],
